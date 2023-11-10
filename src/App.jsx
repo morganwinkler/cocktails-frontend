@@ -3,34 +3,38 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  
+
+function Header() {
   return (
-    <div>
-      {/* header */}
-      <header>
-        <a href="#">Home</a> | <a href="#drinks-index">All Cocktails</a> | <a href="#drinks-new">New Cocktail</a>
-      </header>
+    <header>
+    <a href="#">Home</a> | <a href="#drinks-index">All Cocktails</a> | <a href="#drinks-new">New Cocktail</a>
+    </header>
+  );
+}
 
-      {/* new recipe form */}
-      <div id="drinks-new">
-        <h3>Make a new cocktail!</h3>
-        <form >
-          <div>
-            Name: <input type="text" />
-          </div>
-          <div>
-            Ingredients: <input type="text" />
-          </div>
-          <div>
-            Image URL: <input type="text" />
-          </div>
-          <button type="submit">Create Cocktail</button>
-        </form>
+function DrinksNew() {
+  return (
+    <div id="drinks-new">
+    <h3>Make a new cocktail!</h3>
+    <form >
+      <div>
+        Name: <input type="text" />
       </div>
+      <div>
+        Ingredients: <input type="text" />
+      </div>
+      <div>
+        Image URL: <input type="text" />
+      </div>
+      <button type="submit">Create Cocktail</button>
+    </form>
+  </div>
+  );
+}
 
-      {/* all reciples */}
-      <div id="drinks-index">
+function DrinksIndex() {
+  return (
+    <div id="drinks-index">
           <h3>All Cocktails</h3>
           <div className="drinks">
             <h2>Drink One</h2>
@@ -51,11 +55,34 @@ function App() {
             <button>More Info!</button>
           </div>
         </div>
+  );
+}
 
-        {/* footer */}
-        <footer>
+function Footer() {
+  return (
+    <footer>
           <p>Copyright 2023</p>
         </footer>
+  );
+}
+
+function Content() {
+  return (
+    <div>
+      <DrinksNew />
+      <DrinksIndex />
+    </div>
+  );
+}
+
+function App() {
+  
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Footer />
+       
     </div>
   )
 }
