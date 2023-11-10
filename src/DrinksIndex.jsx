@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export function DrinksIndex(props) {
   return (
     <div id="drinks-index">
