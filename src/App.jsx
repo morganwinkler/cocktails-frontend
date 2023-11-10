@@ -31,7 +31,7 @@ function App() {
 
       {/* all reciples */}
       <div id="drinks-index">
-          <h3>All Coacktails</h3>
+          <h3>All Cocktails</h3>
           <div className="drinks">
             <h2>Drink One</h2>
             <img src="https://media.istockphoto.com/id/1216205052/photo/blue-old-fashioned-cocktail-with-cherry-on-the-rustic-background.webp?b=1&s=170667a&w=0&k=20&c=06KnDW7kDynqlpnR644IYljQ05aaTGD5Wzo_ESpfvNA=" alt="" />
